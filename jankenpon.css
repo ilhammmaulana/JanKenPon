@@ -1,0 +1,150 @@
+:root{
+ font-size: 16px;
+ ukuran-card: 7rem;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+	font-family: 'Questrial', sans-serif ;
+	
+}
+
+h1, h2, h3, h4 ,h5, h6{
+
+letter-spacing: 3px;
+}
+body{
+	background-color: #2f2f2f;
+	overflow-x: hidden;
+}
+.container{
+
+	max-width: 800px;
+	margin: auto;
+    text-align: center;
+    
+    
+}
+.box-player , .box-computer{
+	margin: auto ; 
+   max-width: 500px;
+   height: 200px;
+}
+.box-computer{
+	display: flex;
+	justify-content: center;
+	flex-direction: column ;
+
+}
+.box-player{
+	margin-top: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	
+}
+i{
+	margin-top: 1.5rem;
+	color: black;
+	font-size: 3rem;
+	position: relative;
+}
+h1.title-h1{
+	color: #fff;
+	margin: 1.875rem ;
+}
+.batu , .kertas , .gunting{
+
+		background: #fff;
+		width: 7rem;
+		height: 7rem;
+	border-radius: 1.25rem ; 
+	margin: 5px ;
+
+
+}
+.pilihan-computer{
+		background: #fff;
+		width: 7rem;
+		height: 7rem;
+	margin: auto;
+	border-radius: 1.25rem ;
+
+
+}
+/* var */
+.white-text{
+	color: #fff;
+}
+/* animation */
+.batu i{
+	transition: 0.4s;
+}
+div.batu-animat i{
+	animation: rock 1.3s infinite;
+}
+div.kertas-animat i{
+	animation: papper 1.6s infinite;
+}
+div.gunting-animat i{
+	animation: cut 1s infinite;
+}
+@keyframes rock{
+	0%{
+      transform: rotate(0);
+      bottom: 0;
+	}
+	20%{
+            transform: rotate(90deg);
+            
+		bottom: -10px;
+	}
+	50%{
+bottom: 0px;
+	}
+	100%{
+
+		
+	}
+
+
+}
+@keyframes papper{
+	0%{
+		bottom: 0px;
+	}
+	10%{
+		bottom: 10px;
+	}
+	40%{
+		bottom: 0px;
+	}
+	70%{
+		bottom: 10px;
+	}
+	100%{
+		bottom: 0px;
+		justify-content: ;
+	}
+
+}
+@keyframes cut{
+	0%{
+		transform: rotate(0);
+	}
+	20%{
+		transform: rotate(40deg);
+	}
+	40%{
+		transform: rotate(0);
+	}
+	60%{
+		transform: rotate(40deg);
+	}
+	100%{
+		transform: rotate(0);
+	}
+}
